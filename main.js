@@ -1,6 +1,8 @@
 let arrow_service=document.querySelector('#arrow-service');
 let animationX_services = document.querySelectorAll('.animation-x');
 let animationy_services = document.querySelectorAll('.animation-y');
+let menu_btn=document.querySelector('.menu-btn');
+let menu_close=document.querySelector('.menu-close')
 
 
 
@@ -27,4 +29,10 @@ window.addEventListener('scroll',function(){
         }
     })
 })
+menu_btn.onclick=function(){
+    document.querySelector('.menu-mobile').classList.add('menu-show')
+}
+menu_close.onclick=function(){
+     document.querySelector('.menu-mobile').classList.remove('menu-show')
+}
 
