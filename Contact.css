@@ -100,11 +100,17 @@ header .nav-right a{
 
 header .nav-left a.active{
 
-  text-decoration: underline solid 1px rgb(255, 255, 255);
-  text-underline-offset: 10px;
+  text-decoration: underline solid 4px;
+  text-underline-offset: 7px;
+  text-decoration-color:#b155bf ;
+  }
+header .nav-right a.active{
+
+  text-decoration: underline solid 4px;
+  text-underline-offset: 7px;
+  text-decoration-color:#b155bf ;
   
   }
-
 
   /* title contact */
   .title-contact{
