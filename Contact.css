@@ -15,6 +15,45 @@ body{
   margin: 20px;
 
 }
+
+.stars-background{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+
+.stars-background span{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("Group 32.svg"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .9;
+  animation: floatStars 4s linear infinite;
+}
+
+.stars-background span:nth-child(1){ top:10%; left:15%; }
+.stars-background span:nth-child(2){ top:30%; left:70%; }
+.stars-background span:nth-child(3){ top:60%; left:25%; }
+.stars-background span:nth-child(4){ top:80%; left:50%; }
+.stars-background span:nth-child(5){ top:20%; left:85%; }
+.stars-background span:nth-child(6){ top:45%; left:10%; }
+.stars-background span:nth-child(7){ top:75%; left:80%; }
+.stars-background span:nth-child(8){ top:55%; left:60%; }
+.stars-background span:nth-child(9){ top:10%; left:40%; }
+.stars-background span:nth-child(10){ top:90%; left:30%; }
+
+@keyframes floatStars{
+  0%{ transform:translateY(0) scale(1); opacity:.7; }
+  50%{ transform:translateY(-20px) scale(1.2); opacity:1; }
+  100%{ transform:translateY(0) scale(1); opacity:.7; }
+}
+
+/* header and title */
 .header-titel{
   background: linear-gradient(to bottom, #591456 0%,#291847 100%);
   border: 1px solid rgba(255, 255, 255, 0.341);
@@ -99,6 +138,12 @@ header .nav-right a{
 }
 
 header .nav-left a.active{
+
+  text-decoration: underline solid 1px rgb(255, 255, 255);
+  text-underline-offset: 10px;
+  
+  }
+  header .nav-right a.active{
 
   text-decoration: underline solid 1px rgb(255, 255, 255);
   text-underline-offset: 10px;
@@ -308,6 +353,7 @@ input:focus{
     color: var(--word-color);
     font-size: 30px;
     cursor: pointer;
+    
    }
    header .menu-mobile{
     position: absolute;
@@ -451,3 +497,5 @@ input:focus{
  
   
 }
+
+
