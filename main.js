@@ -1,50 +1,45 @@
-let arrow_service=document.querySelector('#arrow-service');
-let animationX_services = document.querySelectorAll('.animation-x');
-let animationy_services = document.querySelectorAll('.animation-y');
-let menu_btn=document.querySelector('.menu-btn');
-let menu_close=document.querySelector('.menu-close')
-let underLine_Navbar=document.querySelectorAll('header a');
+document.addEventListener('DOMContentLoaded', function() {
+    let arrow_service = document.querySelector('#arrow-service');
+    let animationX_services = document.querySelectorAll('.animation-x');
+    let animationy_services = document.querySelectorAll('.animation-y');
+    let menu_btn = document.querySelector('.menu-btn');
+    let menu_close = document.querySelector('.menu-close');
+    let underLine_Navbar = document.querySelectorAll('header a');
 
-
-
-
-underLine_Navbar.forEach(a =>{
-    a.onclick=function(e){
-        underLine_Navbar.forEach(link =>{
-            link.classList.remove('active')
-        })
-        e.target.classList.add('active')
+    underLine_Navbar.forEach(a => {
+        a.onclick = function(e){
+            underLine_Navbar.forEach(link => link.classList.remove('active'));
+            e.target.classList.add('active');
+        }
+    });
+       if(arrow_service){
+        arrow_service.onclick = function(){
+            window.location.href="html/services.html";
+        }
     }
-})
+  
 
+    window.addEventListener('scroll', function(){
+        animationX_services.forEach(service =>{
+            let serviceTop = service.getBoundingClientRect().top;
+            let screenHigh = window.innerHeight;
+            if(serviceTop < screenHigh-100){
+                service.classList.add('show');
+            }
+        });
+        animationy_services.forEach(service =>{
+            let serviceTop = service.getBoundingClientRect().top;
+            let screenHigh = window.innerHeight;
+            if(serviceTop < screenHigh-100){
+                service.classList.add('show');
+            }
+        });
+    });
 
-
-
-arrow_service.onclick=function(){
-    window.location.href="html/services.html"
-}
-window.addEventListener('scroll',function(){
-    animationX_services.forEach(service =>{
-        let serviceTop=service.getBoundingClientRect().top;
-        let screenHigh=window.innerHeight;
-        if(serviceTop < screenHigh-100){
-            service.classList.add('show')
-        }
-    })
-})
-window.addEventListener('scroll',function(){
-    animationy_services.forEach(service =>{
-        let serviceTop=service.getBoundingClientRect().top;
-        let screenHigh=window.innerHeight;
-        if(serviceTop < screenHigh-100){
-            service.classList.add('show')
-        }
-    })
-})
-menu_btn.onclick=function(){
-    document.querySelector('.menu-mobile').classList.add('menu-show')
-}
-menu_close.onclick=function(){
-     document.querySelector('.menu-mobile').classList.remove('menu-show')
-}
-
+    menu_btn.onclick = function(){
+        document.querySelector('.menu-mobile').classList.add('menu-show');
+    }
+    menu_close.onclick = function(){
+        document.querySelector('.menu-mobile').classList.remove('menu-show');
+    }
+});
