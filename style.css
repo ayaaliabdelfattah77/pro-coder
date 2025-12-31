@@ -381,7 +381,6 @@ font-size: 20px;
 .rights{
   text-align: center;
 }
-<<<<<<< HEAD
 
 
 /* ================================================================================================================ */
@@ -390,60 +389,45 @@ font-size: 20px;
 
 /* header */
 
-=======
-body{
-  background: #291847;
-}
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
 
 
 
 
 
 
-.head-hero{
-<<<<<<< HEAD
-
-=======
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
-  background:
-    radial-gradient(
-      circle at 65% 50%,
-      rgba(255, 0, 255, 0.6) 0%,
-      rgba(255, 0, 255, 0.3) 25%,
-      rgba(255, 0, 255, 0.1) 45%,
-      rgba(255, 0, 255, 0) 60%
-    ),
-    linear-gradient(
-      90deg,
-      #1b0b2e 0%,
-      #3a0f5c 40%,
-      #0b1b3a 100%
-    ); 
-<<<<<<< HEAD
+.head-hero {
     position: relative;
- 
-    margin: 20px 30px; 
+    margin: 20px 30px;
     padding-bottom: 50px;
-    
-  
-    background: rgba(255, 255, 255, 0.03); 
+    min-height: 80vh; 
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+   
+    background: 
+
+        radial-gradient(
+            circle at 70% 40%, 
+           rgba(99, 232, 255, 0.3) 0%, 
+            transparent 60%
+        ),
+       
+ 
+        linear-gradient(
+            135deg, 
+            #1b0b2e 0%, 
+            #3a0f5c 50%, 
+            #0b1b3a 100%
+        );
+
+    /* تأثير التغبيش (Blur) */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     
-   
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
-    
- 
+    /* تأثير التلاشي للأسفل */
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     
     overflow: hidden;
-=======
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
-
-
 }
 
 
@@ -454,12 +438,8 @@ header{
   justify-content: space-between;
   align-items: center;
   position: relative;
-<<<<<<< HEAD
  padding: 20px 40px;
 
-=======
- padding: 0 20px;
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
 
 
  
@@ -506,41 +486,30 @@ header .nav-left img{
   width: 40px;
   height: 100%;
   margin-right: 50px;
-<<<<<<< HEAD
   margin-top: 40px;
-=======
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
  
 }
-header .nav-left .pages-left{
+header .nav-left .pages-left {
   display: flex;
-  gap: 30px;  
-  
+  /* المسافة بتقل تدريجياً من 30px لحد 5px قبل ما يختفوا */
+  gap: clamp(5px, 2vw, 30px); 
 }
-header .nav-left .pages-left a{
+header .nav-left .pages-left a,
+header .nav-right a {
   text-decoration: none;
-  color:var(--word-color);
-  font-size: 24px;
-<<<<<<< HEAD
+  color: white;
   margin-top: 40px;
-=======
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
-
+  /* الخط سيصغر تدريجياً من 24px إلى 14px بناءً على عرض الشاشة */
+  font-size: clamp(14px, 1.2vw + 10px, 24px); 
+  white-space: nowrap; /* يمنع الكلمة من الانقسام لسطرين */
 }
-header .nav-right{
-    display: flex;
-  gap: 24px;
+header .nav-right {
+  display: flex;
+  /* المسافة بتقل تدريجياً من 24px لحد 5px */
+  gap: clamp(5px, 1.5vw, 24px);
   animation: navber 1s ease forwards;
 }
-header .nav-right a{
-  text-decoration: none;
-  color:var(--word-color);
-  font-size: 24px;
-<<<<<<< HEAD
-  margin-top: 40px;
-=======
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
-}
+
 
 header .nav-left a.active{
 
@@ -574,28 +543,20 @@ header .nav-right a.active{
 
 }
 
-<<<<<<< HEAD
 .hero-section .hero-right img {
     width: 95%; 
     max-width: 650px; 
     height: auto; 
     display: block;
     margin: 0 auto;
-=======
-.hero-section .hero-right img{
-  width: 600px;
-  height: 500px;
- 
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
 }
 .hero-section .hero-right{
   animation: fromright 1s ease forwards;
 }
-<<<<<<< HEAD
 .hero-section .hero-left h1 {
     width: 100%; 
     max-width: 600px; 
-    font-size: clamp(35px, 8vw, 65px); 
+    font-size: clamp(35px, 8vw, 55px); 
       background: var(--gradient-colors-hero);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -607,24 +568,6 @@ header .nav-right a.active{
     font-size: clamp(18px, 3vw, 24px);
     margin: 25px auto;
       color: var(--word-color);
-=======
-.hero-section .hero-left h1{
-  font-size: 40px;
-  background: var(--gradient-colors-hero);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 600px;
- 
-}
-.hero-section .hero-left p{
-  font-size: 24px;
-  line-height: 30px;
-  width: 558px;
-  height: 156px;
-  margin-top: 35px;
-  color: var(--word-color);
-  
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
 }
 .hero-section .hero-left button{
   padding: 15px;
@@ -683,11 +626,7 @@ header .nav-right a.active{
 .our-service h2{
   margin-bottom: 60px;
   color: var(--word-color);
-<<<<<<< HEAD
   font-size: 64px;
-=======
-  font-size: 40px;
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
 
 }
 .services{
@@ -812,23 +751,6 @@ header .nav-right a.active{
 
 
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
  @media screen and (max-width: 768px) {
    
     /* header */
@@ -854,13 +776,13 @@ header .nav-right a.active{
     display: none;
   }
   
-   header .nav-left img{
-  width: 35px;
-  height: 55px;
-  margin: 0;
-  margin-top: 10px;
-
-   }
+ header .nav-left img {
+  width: 40px;
+  height: 100%;
+  /* الهامش سيصغر من 50px إلى 10px تدريجياً */
+  margin-right: clamp(10px, 4vw, 50px);
+  margin-top: 40px;
+}
    header .menu-btn{
     display: block;
     font-size: 26px;
@@ -904,134 +826,12 @@ header .nav-right a.active{
     transform: translateY(0);
     
    }
-<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   
   .hero-section {
     display: flex;
     flex-direction: column-reverse; /* الصورة فوق والكلام تحت */
     gap: 40px;
-=======
-     .hero-section{
-    flex-direction: column;
-    flex-direction: column-reverse;
-    gap: 60px;
-    text-align: center;
-    margin-top: 80px;
-    
-  }
-  .hero-section .hero-left{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-  }
-  .hero-section .hero-left h1{
-    font-size: 30px;
-    width: 500px;
-  }
-  .hero-section .hero-left p{
-    font-size: 20px;
-    margin-top: 30px;
-    padding: 0 10px;
-    width: 100%
-    
-    
-  }
-  .hero-section .hero-left button{
-  padding: 18px;
-  font-size: 18px;
-}
-.hero-section .hero-right img{
-  width: 500px;
-  height: 400px;
-  
-  
-}
-/* our services */
-.our-service h2{
-  margin-bottom: 60px;
-  font-size: 30px;
- 
-
-}
-.services{
-  padding: 0 30px;
-  flex-direction: column;
-  gap: 30px;
-}
- .our-service .start{
-  opacity: 0.2;
-  }
-.services h4{
-  font-size: 20px;
- 
-}
-
-.services .div-img-service img{
-  border-radius: 10px;
-  width: 300px;
-}
-.services span{
-  width: 75px;
-  height: 75px;
-}
-.services span .fa-solid{
- font-size: 30px;
-
-}
-
-
-
-
-  }
-
-
-
-
-
-
-
-
-
-/* start why procoder */
-/* end why procoder */
-
-
-    /*  Page Background */
-
-
-
-
-  /* header */
-
-
-
-
-
-
-
-
-
-  /* @keyframes navber{
-    from{
-      transform: translateY(-300px);
-      opacity: 0;
-    }
-    to{
-      transform: translateY(0);
-      opacity: 1;
-    }
-  } */
-
-
-  /* hero section */
-
-
-  /* .hero-section{
-    flex-direction: column;
-    flex-direction: column-reverse;
-    gap: 60px;
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
     text-align: center;
     padding: 0 15px;
     margin-top: 50px;
@@ -1061,21 +861,9 @@ header .nav-right a.active{
     height: auto;
     margin: 0 auto;
   }
-<<<<<<< HEAD
 }
-=======
-  .hero-section .hero-left button{
-  padding: 18px;
-  font-size: 18px;
-}
-.hero-section .hero-right img{
-  width: 500px;
-  height: 400px;
-  
-} */
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
 /* our services */
-/* .our-service h2{
+ .our-service h2{
   margin-bottom: 60px;
   font-size: 30px;
  
@@ -1110,12 +898,4 @@ header .nav-right a.active{
 
 
 
-<<<<<<< HEAD
   }
-=======
-
-  
-} */
-}
- main
->>>>>>> abe1ad1ce7254a2dc9b9dc58c64a7ae2c0e13773
