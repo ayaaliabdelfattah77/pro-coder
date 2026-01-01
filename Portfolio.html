@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="Potrfolio.css">
+</head>
+
+<body>
+ <!-- nav bar -->
+    <section class="head-hero">
+        <header>
+            <div class="nav-container">
+
+                <div class="nav-left">
+                    <img src="./img/logo.png" alt="Logo">
+
+                    <nav class="pages-left">
+                        <a href="index.html">Home</a>
+                        <a href="About.html">About</a>
+                        <a href="Services.html">Services</a>
+                    </nav>
+                </div>
+
+                <nav class="nav-right">
+                    <a class="active" href="Portfolio.html">Portfolio</a>
+                    <a href="Testimonials.html">Testimonials</a>
+                    <a href="Contact.html">Contact</a>
+                </nav>
+                
+                <button class="menu-btn" id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav">
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Services.html">Services</a>
+                <a class="active" href="Portfolio.html">Portfolio</a>
+                <a href="Testimonials.html">Testimonials</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Our Portfolio</h1>
+            <p>
+                We Take Pride in executing a diverse range of projects in different feilds. we focus on
+                quality,performance, and user experience in every project.
+            </p>
+        </div>
+    </section>
+    <!-- Stars Background -->
+    <div class="stars-background">
+        <span style="--size: 40px; --x: 15%; --y: 40%; --speed: 3s;"></span>
+        <span style="--size: 30px; --x: 69%; --y: 15%; --speed: 5s;"></span>
+        <span style="--size: 70px; --x: 20%; --y: 60%; --speed: 4s;"></span>
+        <span style="--size: 40px; --x: 80%; --y: 55%; --speed: 6s;"></span>
+    </div>
+<!-- Portfolio Cards -->
+    <div class="cards">
+        <div class="card">
+            <img src="./img/portfolio1.jpg" alt="Project 1">
+            <h3>E-Commerce Platform</h3>
+            <p>A complete e-commerce store with secure payment system</p>
+            <div class="btns">
+                <button>React</button>
+                <button>Node.js</button>
+                <button>MongoDB</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/portfolio2.png" alt="Project 2">
+            <h3>Food Delivery App</h3>
+            <p>A compelete mobile app with live order tracking and payment system.</p>
+            <div class="btns">
+                <button>Next.js</button>
+                <button>Tailwind</button>
+                <button>PostgreSQL</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/portfolio3.png" alt="Project 3">
+            <h3>Media Buying</h3>
+            <p>Strategic media buying to maximize
+                reach and boost conversions.</p>
+            <div class="btns">
+                <button>Meta Ads</button>
+                <button>Analytics</button>
+                <button>Google Ads</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/portfolio4.jpg" alt="Project 4">
+            <h3>Data Analysis</h3>
+            <p>Data-driven insights to support smarter and faster decisions.</p>
+            <div class="btns">
+                <button>Excel</button>
+                <button>Power BI</button>
+                <button>SQL</button>
+            </div>
+        </div>
+    </div>
+<!-- Stars Background cards -->
+    <div class="cards-stars">
+        <span style="--x:15%; --y:80%; --size:60px; --speed:6s"></span>
+        <span style="--x:40%; --y:60%; --size:45px; --speed:4s"></span>
+        <span style="--x:70%; --y:75%; --size:35px; --speed:5s"></span>
+    </div>
+    <!-- cta -->
+    <section class="cta">
+        <h2>Have a Special Project?</h2>
+        <p>Let us help You achieve it and add it to our list of successful Projects.</p>
+        <button class="btn-cta">Start Your Project Now</button>
+    </section>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row2">
+                <!-- About Section -->
+                <div class="">
+                    <h2 class="footer-h2">ProCoder</h2>
+                    <p class="p-text">
+                        Turning Your ideas into Smart Softwaresolution<br>
+
+                    </p>
+                    <p class="pp-text2">We Build Smart Digital solution</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="">
+
+                    <h2 class="quick-h2">Quick Links</h2>
+                    <ul class="footer-ul">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/About.html">About Us</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/Portfolio.html">Portfolio</a></li>
+                        <li><a href="/Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="">
+
+                    <h2 class="contact-h2">Contact Us</h2>
+                    <ul class="">
+                        <li class="email ">
+                            <img src="envelope 1.svg" />
+                            <span>info@ProCoder.com</span>
+                        </li>
+                        <li class="phone">
+                            <img src="1.svg" />
+                            <span>+202354504400</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <p class="rights">&copy; 2025 ProCoder - All Rights Reserved.</p>
+
+        </div>
+    </footer>
+<!-- js menu  -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                menuBtn.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
