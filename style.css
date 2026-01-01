@@ -419,11 +419,11 @@ font-size: 20px;
             #0b1b3a 100%
         );
 
-    /* تأثير التغبيش (Blur) */
+  
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     
-    /* تأثير التلاشي للأسفل */
+
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     
@@ -491,7 +491,7 @@ header .nav-left img{
 }
 header .nav-left .pages-left {
   display: flex;
-  /* المسافة بتقل تدريجياً من 30px لحد 5px قبل ما يختفوا */
+  
   gap: clamp(5px, 2vw, 30px); 
 }
 header .nav-left .pages-left a,
@@ -724,7 +724,7 @@ header .nav-right a:hover {
   background-position: center;
   opacity: .9;
   animation: floatStars 4s linear infinite;
-} */
+} 
 
 .stars-background span:nth-child(1){ top:10%; left:15%; }
 .stars-background span:nth-child(2){ top:30%; left:70%; }
