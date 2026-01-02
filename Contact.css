@@ -3,106 +3,7 @@
   --word-color:white;
    --gradient-colors-hero:linear-gradient(90deg,#FC60FF,#63E8FF,#63E8FF);
    --gradient-colors-hero-btn:linear-gradient(90deg,#FD77FF,#09D6FB);
-}
-
-
-
-
-/* header and title  */
-
- /* .header-titel{ 
-background-image: 
-    linear-gradient(to bottom, rgba(14, 1, 22, 0) 70%, oklab(16.994% 0.03966 -0.0525 / 0.8) 100%), 
-    url('Group 112.png');
- background-size:84% ;
- background-repeat: no-repeat;
- background-position: center;
- background-position: top;
- height: 50vh;
- width : 100%;
- margin-top: 10px;
- position: relative;
- z-index: 1;
-
-}
-
-
-
-header{
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
- padding: 0 10px;
-
-
- 
-  
-}
-header .menu-btn{
-  display: none;
-}
-header .menu-mobile{
-  display: none;
-}
-
-
-header .nav-left{
-  display: flex;
-  align-items: center;
-  animation: navber 1s ease forwards;
-}
-header .nav-left img{
-  width: 65px;
-  height: 100%;
- 
-}
-header .nav-left .pages-left{
-  display: flex;
-  gap: 20px;
-
-  
-}
-header .nav-left .pages-left a{
-  text-decoration: none;
-  color:var(--word-color);
-  font-size: 24px;
-
-}
-header .nav-right{
-    display: flex;
-  gap: 24px;
-  animation: navber 1s ease forwards;
-}
-header .nav-right a{
-  text-decoration: none;
-  color:var(--word-color);
-  font-size: 24px;
-}
-
-header .nav-left a.active{
-
-  text-decoration: underline solid 4px;
-  text-underline-offset: 7px;
-  text-decoration-color:#b155bf ;
-  }
-header .nav-right a.active{
-
-  text-decoration: underline solid 4px;
-  text-underline-offset: 7px;
-  text-decoration-color:#b155bf ;
-  
-  }
-  header .nav-right a.active{
-
-  text-decoration: underline solid 1px rgb(255, 255, 255);
-  text-underline-offset: 10px;
-  }
-  /* end header */
- 
-
- 
+} 
 * {
   margin: 0;
   padding: 0;
@@ -146,7 +47,7 @@ header{
 .header-titel{
   background-image: 
     linear-gradient(to bottom, rgba(14, 1, 22, 0) 70%, oklab(16.994% 0.03966 -0.0525 / 0.8) 100%), 
-    url('Group 112.png');
+    url('images/Group\ 112.png');
  background-size:84% ;
  background-repeat: no-repeat;
  background-position: center;
@@ -262,13 +163,13 @@ header .nav-left a,
     margin-top: 100px;
   }
   .title-contact h1{
-    font-size: 34px;
+    font-size: 50px;
     color: var(--word-color);
     margin-bottom: 24px;
 
   }
   .title-contact p{
-    font-size: 20px;
+    font-size: 30px;
     color: var(--word-color);
     margin-top: 20px;
     
@@ -375,7 +276,12 @@ header .nav-left a,
     font-size: 25px;
     color: #100425;
     margin: auto;
+    border: none;
+    cursor: pointer;
   }
+  /* .send-msg .btn-send button:focus{
+    border: none;
+  } */
   .send-msg .btn-send img{
     width: 35px;
     height: 35px;
@@ -474,99 +380,51 @@ header .nav-left a,
 
 
   /* footer  */
+
 #footer{
   background-color: black;
-  color: rgb(240, 239, 239);
-  height: auto;
-  width: 100%;
-  margin-top: 1px;
+  color: white;
+    padding: 20px 20px;
 
 }
-.row2{
-   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  gap: 30px;
-}
-.footer-h2 {
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 50px;
-  line-height: 50px;
-  margin-left: 120px;
-}
 
-.contact-h2{
-  font-size: 25px;
+.footer-h2 , .quick-h2 ,.contact-h2{
+  font-size: 36px;
   font-weight: bold;
   margin-top: 50px;
-  line-height: 50px;
-  margin-right: 120px;
-  padding-left: 30px;
-}
-
-.quick-h2{
-  margin-top: 50px;
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 50px;
-  
-  
+  line-height: 80px;
 }
 .p-text  {
-  font-size: 15px;
+  font-size: 24px;
   font-weight: bold;
-  line-height: 25px;
-  margin-left: 120px;
-  
 
  
 }
 .pp-text2{
-font-size: 15px;
-  line-height: 25px;
-margin-top: 10px;
- margin-left: 120px;
+font-size: 20px;
  
 }
-
+.contact-h2{
+  margin-left: 20px;
+}
 .footer-ul li , .email , .phone{
  list-style: none;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 50px;
 
-
-}
-
-.email img , .phone img{
-  margin-right: 10px;
-  width: 18px;
 }
 .footer-ul  a{
    text-decoration: none;
-     color: rgb(241, 241, 241); 
+     color: white; 
 }
 .p-text2{
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
-  
-}
-
-hr{
-   border: none;
-   height: 1px;
-   background: #ffffff58;
-   margin: 20px 0;
-   margin-left: 120px;
-   margin-right: 100px;
 }
 .rights{
-  font-size: 13px;
   text-align: center;
-  margin-top: 5px;
 }
-
 
   
 
