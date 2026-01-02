@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
        if(arrow_service){
         arrow_service.onclick = function(){
-            window.location.href="html/services.html";
+            window.location.href="services.html";
         }
     }
   

@@ -161,7 +161,7 @@ header .nav-right a:hover {
 }
 
 .card {
-width: 500px;
+width: 400px;
 height: auto;
   border-radius: 18px;
   text-align: left;
@@ -252,7 +252,7 @@ flex-shrink: 0;
 
 .cta {
   background: linear-gradient(135deg,#9b7cff,#b084f7);
-  padding: 30px 8%;
+  padding: 20px 8%;
   text-align: center;
    
 }

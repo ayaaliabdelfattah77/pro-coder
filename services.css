@@ -132,15 +132,7 @@ stars-background{
   align-items: center;
  
 }
-.search-bar button{
-    background-color: #2886FF;
-    width: 220px;
-    height: 40px;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 20px;
-}
+
 .search-bar #selection{
       width: 220px;
     height: 40px;
@@ -175,8 +167,7 @@ stars-background{
   }
 
   #selection-filter,
-  .input-services,
-  .search-bar button {
+  .input-services{
     width: 90%;      
     font-size: 16px; 
     height: 40px;    
@@ -298,6 +289,7 @@ line-height: 30px;
 }
 
 .technology {
+  display: inline-block;
   background-color: #E6E9FF;  
   color: #2D2A5F;
   padding: 8px 18px;
@@ -306,8 +298,14 @@ line-height: 30px;
   font-weight: 500;
   white-space: nowrap;
   margin-bottom:25px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.technology:hover {
+    background: #b155bf;
+    color: #fff;
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 15px rgba(177, 85, 191, 0.4); 
+}
 
 /* ----------special project------------------------------------------------------------------ */
 
@@ -616,7 +614,7 @@ header .nav-right a:hover {
    header .menu-mobile .menu-close{
     align-self: flex-end;
     font-size: 30px;
-    color: var(--word-color);
+    color: white;
     cursor: pointer;
     
     
@@ -624,7 +622,7 @@ header .nav-right a:hover {
    }
    header .menu-mobile a{
     text-decoration: none;
-    color: var(--word-color);
+    color:white;
     font-size: 20px;
    }
    header .menu-mobile.menu-show{

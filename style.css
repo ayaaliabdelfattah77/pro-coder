@@ -22,51 +22,43 @@ body{
     overflow-x: hidden;
     color: #fff;
 }
-/* stars */
+/* ===== Stars Background ===== */
+   .stars-background{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.stars-background span{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: .9;
+  animation: floatStars 6s linear infinite;
+}
 
-.loader {
-  width: 96px;
-  box-sizing: content-box;
-  height: 48px;
-  background: #FFF;
-  border-color: #4C50A1;
-  border-style: solid;
-  border-width: 2px 2px 50px 2px;
-  border-radius: 100%;
-  position: relative;
-  left :50%;
-  margin-top: 10%;
-  animation: 3s yinYang linear infinite;
+.stars-background span:nth-child(1){ top:10%; left:15%; color: #b831f6; }
+.stars-background span:nth-child(2){ top:30%; left:70%; color: #b67dd0; }
+.stars-background span:nth-child(3){ top:60%; left:25%; color: #9e10e0; }
+.stars-background span:nth-child(4){ top:80%; left:50%; color: #9349b6; }
+.stars-background span:nth-child(5){ top:20%; left:85%; color: #cc7bd4; }
+.stars-background span:nth-child(6){ top:45%; left:10%; color: #9A3BBF; }
+.stars-background span:nth-child(7){ top:75%; left:80%; color: #be5fea; }
+.stars-background span:nth-child(8){ top:55%; left:60%; color: #8d1698; }
+.stars-background span:nth-child(9){ top:10%; left:40%; color: #9A3BBF; }
+.stars-background span:nth-child(10){ top:90%; left:30%; color: #6b1066; }
+
+.stars-background span:nth-child(odd){
+  animation-duration: 8s;
 }
-.loader:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  background: #FFF;
-  border: 18px solid #F5BAF6;
-  border-radius: 100%;
-  width: 12px;
-  height: 12px;
-  box-sizing: content-box;
+.stars-background span:nth-child(even){
+  animation-duration: 4s;
 }
-.loader:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
- background: linear-gradient(135deg, #a747a8, #4C50A1); 
-  border: 18px solid #FFF;
-  border-radius: 100%;
-  width: 12px;
-  height: 12px;
-  box-sizing: content-box;
-}
-@keyframes yinYang {
-  100%{transform: rotate(360deg)}
-}
-.stars-background{
-  z-index: 5000;
+
+@keyframes floatStars{
+  0%{ transform:translateY(0) scale(1); opacity:.7; }
+  50%{ transform:translateY(-20px) scale(1.2); opacity:1; }
+  100%{ transform:translateY(0) scale(1); opacity:.7; }
 }
 
 /* why pro coder */
@@ -335,6 +327,9 @@ margin-top: 250px;
 
 
 }
+#startProject-section a {
+  text-decoration: none;
+}
 /* -------------------------------------------------------------------- */
 
 #footer{
@@ -387,7 +382,7 @@ font-size: 20px;
 
 
 
-/* header */
+
 
 
 
@@ -397,7 +392,7 @@ font-size: 20px;
 
 .head-hero {
     position: relative;
-    margin: 20px 30px;
+    margin: 0 80px;
     padding-bottom: 50px;
     min-height: 80vh; 
     border-radius: 24px;
@@ -431,7 +426,7 @@ font-size: 20px;
 }
 
 
-
+/* //header */
 header{
   height: 70px;
   display: flex;
@@ -499,13 +494,12 @@ header .nav-right a {
   text-decoration: none;
   color: white;
   margin-top: 40px;
-  /* الخط سيصغر تدريجياً من 24px إلى 14px بناءً على عرض الشاشة */
   font-size: clamp(14px, 1.2vw + 10px, 24px); 
-  white-space: nowrap; /* يمنع الكلمة من الانقسام لسطرين */
+  white-space: nowrap; 
 }
 header .nav-right {
   display: flex;
-  /* المسافة بتقل تدريجياً من 24px لحد 5px */
+
   gap: clamp(5px, 1.5vw, 24px);
   animation: navber 1s ease forwards;
 }
@@ -705,44 +699,6 @@ header .nav-right a:hover {
 
  
   
-  /* background(star) */
-  .stars-background{
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  overflow: hidden;
-}
-
-
-.stars-background span{
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("Group 32.svg"); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: .9;
-  animation: floatStars 4s linear infinite;
-} 
-
-.stars-background span:nth-child(1){ top:10%; left:15%; }
-.stars-background span:nth-child(2){ top:30%; left:70%; }
-.stars-background span:nth-child(3){ top:60%; left:25%; }
-.stars-background span:nth-child(4){ top:80%; left:50%; }
-.stars-background span:nth-child(5){ top:20%; left:85%; }
-.stars-background span:nth-child(6){ top:45%; left:10%; }
-.stars-background span:nth-child(7){ top:75%; left:80%; }
-.stars-background span:nth-child(8){ top:55%; left:60%; }
-.stars-background span:nth-child(9){ top:10%; left:40%; }
-.stars-background span:nth-child(10){ top:90%; left:30%; }
-
-@keyframes floatStars{
-  0%{ transform:translateY(0) scale(1); opacity:.7; }
-  50%{ transform:translateY(-20px) scale(1.2); opacity:1; }
-  100%{ transform:translateY(0) scale(1); opacity:.7; }
-}
-
 
 
  @media screen and (max-width: 768px) {
@@ -773,7 +729,7 @@ header .nav-right a:hover {
  header .nav-left img {
   width: 40px;
   height: 100%;
-  /* الهامش سيصغر من 50px إلى 10px تدريجياً */
+
   margin-right: clamp(10px, 4vw, 50px);
   margin-top: 40px;
 }
@@ -838,7 +794,7 @@ header .nav-right a:hover {
   .hero-section .hero-left h1 {
     width: 100%;
     max-width: 500px;
-    font-size: clamp(22px, 6vw, 32px); /* خط مرن */
+    font-size: clamp(22px, 6vw, 32px); 
     margin: 0 auto;
   }
 

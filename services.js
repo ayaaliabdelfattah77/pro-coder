@@ -125,7 +125,7 @@ searchInput.addEventListener("input", filteration);
 
 let menu_btn=document.querySelector('.menu-btn');
 let menu_close=document.querySelector('.menu-close')
-let underLine_Navbar=document.querySelectorAll('header a');
+
 menu_btn.onclick=function(){
     document.querySelector('.menu-mobile').classList.add('menu-show')
 }
