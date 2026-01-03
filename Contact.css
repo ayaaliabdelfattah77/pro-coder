@@ -52,9 +52,10 @@ header{
  background-repeat: no-repeat;
  background-position: center;
  background-position: top;
- height: 50vh;
+ height: 60vh;
  width : 100%;
  margin-top: 10px;
+ 
  position: relative;
  z-index: 1;
  
@@ -75,7 +76,7 @@ header .nav-left{
 header .nav-left img{
   width: 40px;
   height: 100%;
-  margin-right: 120px;
+  margin-right: 50px;
   margin-left: 120px;
   margin-top: 20px;
 }
@@ -160,27 +161,34 @@ header .nav-left a,
   .title-contact{
 
     text-align: center;
-    margin-top: 100px;
+    margin: 100px 0;
+    
+    
   }
   .title-contact h1{
     font-size: 50px;
+    font-weight: bold;
     color: var(--word-color);
     margin-bottom: 24px;
 
   }
   .title-contact p{
-    font-size: 30px;
+    font-size: 25px;
     color: var(--word-color);
     margin-top: 20px;
+ 
     
   }
 
   /* section send msg */
   .form{
     margin: 0 120px;
+    margin-bottom: 180px;
+   
   }
   .send-msg{
-    width: 100%;
+    width: 85%;
+    margin: auto;
     background: #291847;
     background: linear-gradient(0deg,#793EA5 0%,#4D55D4 100%);
     padding: 65px 80px;
@@ -213,7 +221,7 @@ header .nav-left a,
    label{
     display: block;
     margin-bottom: 16px;
-    font-size: 30px;
+    font-size: 24px;
     color: var(--word-color);
     margin-left: 20px;
   }
@@ -265,7 +273,7 @@ header .nav-left a,
   
   .send-msg .btn-send button{
     width: 350px;
-    height: 150;
+    height: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,17 +282,16 @@ header .nav-left a,
     background: linear-gradient(90deg,#63E8FF 0%,#FD9AFF 100%);
     padding: 15px;
     font-size: 25px;
+    font-weight: bold;
     color: #100425;
     margin: auto;
     border: none;
     cursor: pointer;
   }
-  /* .send-msg .btn-send button:focus{
-    border: none;
-  } */
+  
   .send-msg .btn-send img{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     margin-left: 8px;
  
   }
@@ -299,18 +306,19 @@ header .nav-left a,
   .send-company{
     display: flex;
     justify-content: space-between;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin-top: 180px;
+    margin-bottom: 150px;
     padding:0 120px;
   }
   .send-company h1{
-    font-size: 35px;
+    font-size: 34px;
+    font-weight: bold;
     color: var(--word-color);
     margin-bottom:40px ;
   }
   .send-company .img-company{
-    width: 430px;
-    height: 230;
+    width: 380px;
+    height: 210;
 
   }
   .send-company ul{
@@ -326,14 +334,14 @@ header .nav-left a,
     margin-bottom: 40px;
   }
  .send-company ul li span{
-   font-size: 25px;
+   font-size: 24px;
    color:var(--word-color) ;
 
   }
 
   .send-company ul img{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
   
   /* background(star) */
@@ -346,15 +354,14 @@ header .nav-left a,
 
 
 .stars-background span{
+   position: absolute;
+}
+.stars-background span img{
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url("Group 32.svg"); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: .9;
   animation: floatStars 4s linear infinite;
+
 }
 
 .stars-background span:nth-child(1){ top:10%; left:15%; }
@@ -384,24 +391,26 @@ header .nav-left a,
 #footer{
   background-color: black;
   color: white;
-    padding: 20px 20px;
+    padding: 20px 0;
+ 
 
 }
 
 .footer-h2 , .quick-h2 ,.contact-h2{
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   margin-top: 50px;
   line-height: 80px;
 }
 .p-text  {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
 
  
 }
 .pp-text2{
-font-size: 20px;
+font-size: 18px;
+font-weight: bold;
  
 }
 .contact-h2{
@@ -409,7 +418,7 @@ font-size: 20px;
 }
 .footer-ul li , .email , .phone{
  list-style: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 50px;
 
@@ -419,7 +428,7 @@ font-size: 20px;
      color: white; 
 }
 .p-text2{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 .rights{
@@ -572,7 +581,7 @@ font-size: 20px;
 
   
   .send-msg .btn-send button{
-    width: 170px;
+    width: 190px;
     height: 60px;
     padding: 10px;
     font-size: 18px;
@@ -583,7 +592,8 @@ font-size: 20px;
   }
 
   .send-msg h1{
-    font-size: 35px;
+    font-size: 27px;
+    font-weight: bold;
    margin: 10px;
   }
   /* information company */
@@ -638,55 +648,6 @@ font-size: 20px;
 
 
 
-/* 
-@media (max-width: 768px) {
-
-  header{
-    height: 60px;
-    margin-left: 0;
-    padding: 0 16px;
-  }
-
- 
-  header .nav-left,
-  header .nav-right{
-    display: none;
-  }
-
-  header .menu-btn{
-    display: block;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-    z-index: 1001;
-  }
-
-
-  header .menu-mobile{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    inset: 0;
-    background: #0e0116;
-    padding: 40px 24px;
-    gap: 24px;
-    z-index: 1000;
-  }
-
-  header .menu-mobile a{
-    color: white;
-    font-size: 22px;
-    text-decoration: none;
-  }
-
-  header .menu-close{
-    align-self: flex-end;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-  }
-
-
   .header-titel{
     height: auto;
     padding-bottom: 60px;
@@ -705,4 +666,4 @@ font-size: 20px;
   .title-contact p{
     font-size: 16px;
   }
-} */
+

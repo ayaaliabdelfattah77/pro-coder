@@ -13,38 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-</head>
-<body>
-  <header>
-        <div class="nav-left">
-            <img src="images/logo.png" alt="">
-           <div class="pages-left">
-             <a  href="index.html">Home</a>
-            <a class="active" href="About.html">About</a>
-            <a href="services.html">Services</a>
-           </div>
-        </div>
-         <div class="nav-right">
-            
-            <a href="Portfolio.html">Portfolio</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="Contact.html">Contact</a>
-        </div>
-        <div class="shape"></div>
-        
 
-        <span class="menu-btn"><i class="fa-solid fa-bars"></i></span>
-        <div class="menu-mobile">
-             <span class="menu-close"><i class="fa-solid fa-xmark"></i></span>
-            <a  href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Testimonials</a>
-            <a href="Contact.html">Contact</a>
-        </div>
-    </header>
-<div class="stars-background">
+<body>
+  <!-- background stars -->
+ 
+   <div class="stars-background">
   <span>★</span>
   <span>★</span>
   <span>★</span>
@@ -57,22 +30,53 @@
   <span>★</span>
 </div>
 
+ <!-- heeader -->
+   
+       <section class="header-titel">
+           <header>
+        <div class="nav-left">
+            <img src="images/logo.png" alt="">
+            
+           <div class="pages-left">
+             <a  href="index.html">Home</a>
+             <br>
+            <a href="#">About</a>
+            <br>
+            <a href="services.html">Services</a>
+           </div>
+        </div>
+         <div class="nav-right">
+            
+            <a href="Portfolio.html">Portfolio</a>
+            <br>
+            <a class="" href="testimonials.html">Testimonials</a>
+            <br>
+            <a class="active" href="Contact.html">Contact</a>
+        </div>
+        
 
-<div class="wrapper">
-  <div class="cardd">
-
-    <section class="about">
-
-
+        <span class="menu-btn"><i class="fa-solid fa-bars"></i></span>
+        <div class="menu-mobile">
+             <span class="menu-close"><i class="fa-solid fa-xmark"></i></span>
+            <a class="active" href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="services.html">Services</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </header>
+        
+    <div class="title-contact">
         <h1>About Us</h1>
-        <p>
-          ProCoder is a specialized company in providing programming services and digital products.
+        <p>ProCoder is a specialized company in providing programming services and digital products.
           We work to transform ideas into effective digital products that help companies grow and
-          achieve their goals.
-        </p>
-
-        <!-- Colored Cards -->
-        <div class="info-cards">
+          achieve their goals.</p>
+    </div>
+    
+     </section>
+     <!-- Colored Cards -->
+        <section class="info-cards">
           <div class="info-card vision">
             <h3><i class="fa-solid fa-bullseye"></i> Our Vision</h3>
             <p>
@@ -94,20 +98,19 @@
                 Commitment to  quality, continuous innovation , transparency With clients, and constant development.
             </p>
           </div>
-        </div>
-      </section>
-
-  </div>
-</div>
+          </section>
+   
 
 
-<footer id="footer">
+
+   <!-- footer -->
+ <footer id="footer">
 
       <div class="container">
 
         <div class="row justify-content-around">
           <!-- About Section -->
-          <div class="col-lg-5 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <h2 class="footer-h2">ProCoder</h2>
             <p class="p-text">
               Turning Your ideas into Smart Software<br />
@@ -117,7 +120,7 @@
           </div>
 
           <!-- Quick Links -->
-          <div class="col-lg-3 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <h2 class="quick-h2">Quick Links</h2>
             <ul class="footer-ul">
               <li><a href="/">Home</a></li>
@@ -149,6 +152,7 @@
       </div>
     </footer>
 
+  
 
 
 
@@ -158,22 +162,12 @@
 
 
 
-<script>
-
- let menu_btn = document.querySelector('.menu-btn');
-    let menu_close = document.querySelector('.menu-close');
-    let underLine_Navbar = document.querySelectorAll('header a');
 
 
 
-       menu_btn.onclick = function(){
-        document.querySelector('.menu-mobile').classList.add('menu-show');
-    }
-    menu_close.onclick = function(){
-        document.querySelector('.menu-mobile').classList.remove('menu-show');
-    }
 
-</script>
+
+<script src="main.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
