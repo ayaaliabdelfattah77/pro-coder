@@ -5,73 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-<link
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="Potrfolio.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Portfolio.css">
 </head>
 
 <body>
  <!-- nav bar -->
-   <header>
-        <div class="nav-left">
-            <img src="images/logo.png" alt="">
-           <div class="pages-left">
-             <a  href="index.html">Home</a>
-            <a  href="About.html">About</a>
-            <a href="services.html">Services</a>
-           </div>
-        </div>
-         <div class="nav-right">
-            
-            <a class="active" href="#">Portfolio</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="Contact.html">Contact</a>
-        </div>
-        <div class="shape"></div>
-        
-
-        <span class="menu-btn"><i class="fa-solid fa-bars"></i></span>
-        <div class="menu-mobile">
-             <span class="menu-close"><i class="fa-solid fa-xmark"></i></span>
-            <a  href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="services.html">Services</a>
-            <a class="active" href="#">Portfolio</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="Contact.html">Contact</a>
-        </div>
-    </header>
     <section class="head-hero">
-     
+        <header>
+            <div class="nav-container">
+
+                <div class="nav-left">
+                    <img src="./images/logo.png" alt="Logo">
+
+                    <nav class="pages-left">
+                        <a href="index.html">Home</a>
+                        <a href="About.html">About</a>
+                        <a href="Services.html">Services</a>
+                    </nav>
+                </div>
+
+                <nav class="nav-right">
+                    <a class="active" href="Portfolio.html">Portfolio</a>
+                    <a href="Testimonials.html">Testimonials</a>
+                    <a href="Contact.html">Contact</a>
+                </nav>
+                
+                <button class="menu-btn" id="menuBtn">
+                    <i class="fas fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+        </header>
         
-        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav">
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Services.html">Services</a>
+                <a class="active" href="Portfolio.html">Portfolio</a>
+                <a href="Testimonials.html">Testimonials</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </div>
         <div class="content">
             <h1>Our Portfolio</h1>
             <p>
                 We Take Pride in executing a diverse range of projects in different feilds. we focus on
                 quality,performance, and user experience in every project.
-            </p>
+            </p>  
+            <div class="shadow"></div>      
         </div>
+
     </section>
-  <div class="stars-background">
-  <span>★</span>
-  <span>★</span>
-  <span>★</span>
-  <span>★</span>
-  <span>★</span>
-  <span>★</span>
-  <span>★</span>
-  <span>★</span>
-  <span>★</span>
-  <span>★</span>
-</div>
+    
+    <!-- Stars Background -->
+    <div class="stars-background">
+        <span style="--size: 40px; --x: 15%; --y: 40%; --speed: 3s;"></span>
+        <span style="--size: 30px; --x: 69%; --y: 15%; --speed: 5s;"></span>
+        <span style="--size: 70px; --x: 20%; --y: 60%; --speed: 4s;"></span>
+        <span style="--size: 40px; --x: 80%; --y: 55%; --speed: 6s;"></span>
+    </div>
 <!-- Portfolio Cards -->
     <div class="cards">
+        
         <div class="card">
-            <img src="images/img1.jpg" alt="Project 1">
+            
+            <img src="./images/img1.jpg" alt="Project 1">
             <h3>E-Commerce Platform</h3>
             <p>A complete e-commerce store with secure payment system</p>
             <div class="btns">
@@ -81,8 +87,8 @@
             </div>
         </div>
         <div class="card">
-            <img src="images/img2.png" alt="Project 2">
-            <h3>Food Delivery App</h3>
+            <img src="./images/img2.png" alt="Project 2">
+            <h3>Furniture Shop App</h3>
             <p>A compelete mobile app with live order tracking and payment system.</p>
             <div class="btns">
                 <button>Next.js</button>
@@ -91,7 +97,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="images/img3.png" alt="Project 3">
+            <img src="./images/img3.png" alt="Project 3">
             <h3>Media Buying</h3>
             <p>Strategic media buying to maximize
                 reach and boost conversions.</p>
@@ -102,7 +108,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="images/img4.jpg" alt="Project 4">
+            <img src="./images/img4.jpg" alt="Project 4">
             <h3>Data Analysis</h3>
             <p>Data-driven insights to support smarter and faster decisions.</p>
             <div class="btns">
@@ -114,27 +120,24 @@
     </div>
 <!-- Stars Background cards -->
     <div class="cards-stars">
-        <span style="--x:15%; --y:80%; --size:60px; --speed:6s"></span>
-        <span style="--x:40%; --y:60%; --size:45px; --speed:4s"></span>
-        <span style="--x:70%; --y:75%; --size:35px; --speed:5s"></span>
+        <span style="--x:20%; --y:80%; --size:60px; --speed:6s"></span>
+        <span style="--x:50%; --y:40%; --size:45px; --speed:4s"></span>
+        <span style="--x:75%; --y:85%; --size:35px; --speed:5s"></span>
     </div>
     <!-- cta -->
     <section class="cta">
         <h2>Have a Special Project?</h2>
         <p>Let us help You achieve it and add it to our list of successful Projects.</p>
-        <a href="Contact.html">
-        <button class="btn-cta">Start Your Project Now</button>
-
-        </a>
+        <a href="Contact.html"><button class="btn-cta">Start Your Project Now</button></a>
     </section>
     <!-- footer -->
-    <footer id="footer">
+<footer id="footer">
 
       <div class="container">
 
         <div class="row justify-content-around">
           <!-- About Section -->
-          <div class="col-lg-5 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <h2 class="footer-h2">ProCoder</h2>
             <p class="p-text">
               Turning Your ideas into Smart Software<br />
@@ -144,13 +147,13 @@
           </div>
 
           <!-- Quick Links -->
-          <div class="col-lg-3 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <h2 class="quick-h2">Quick Links</h2>
             <ul class="footer-ul">
               <li><a href="/">Home</a></li>
-              <li><a href="/About.html">About Us</a></li>
+              <li><a href="/about">About Us</a></li>
               <li><a href="/services.html">Services</a></li>
-              <li><a href="/Portfolio.html">Portfolio</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
               <li><a href="/Contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -175,22 +178,37 @@
         <p class="rights">&copy; 2025 ProCoder - All Rights Reserved.</p>
       </div>
     </footer>
-
-
-<script>
-  let menu_btn=document.querySelector('.menu-btn');
-let menu_close=document.querySelector('.menu-close')
-
-menu_btn.onclick=function(){
-    document.querySelector('.menu-mobile').classList.add('menu-show')
-}
-menu_close.onclick=function(){
-     document.querySelector('.menu-mobile').classList.remove('menu-show')
-}
-</script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<!-- js menu  -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            
+            // Toggle icon between bars and X
+            if (menuBtn.classList.contains('active')) {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                menuBtn.classList.remove('active');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
