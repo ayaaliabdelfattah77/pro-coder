@@ -351,51 +351,131 @@ header a.active::after {
 }
 
 /* footer */
-#footer{
+#footer {
   background-color: black;
   color: white;
-    padding: 20px 0;
- 
-
+  width: 100%;
+  padding: 0;
 }
 
-.footer-h2 , .quick-h2 ,.contact-h2{
-  font-size: 32px;
-  font-weight: bold;
-  margin-top: 50px;
-  line-height: 80px;
+#footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 120px 0 120px;
 }
-.p-text  {
-  font-size: 18px;
-  font-weight: bold;
 
- 
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 30px;
 }
-.pp-text2{
-font-size: 18px;
- 
-}
-.contact-h2{
-  margin-left: 20px;
-}
-.footer-ul li , .email , .phone{
- list-style: none;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 50px;
 
+.row2 > div {
+  flex: 1;
 }
-.footer-ul  a{
-   text-decoration: none;
-     color: white; 
-}
-.p-text2{
-  font-size: 18px;
+
+.footer-h2 {
+  font-size: 25px;
   font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
 }
-.rights{
+
+.contact-h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
+  margin-left: 40px;
+}
+
+.quick-h2 {
   text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
 }
+
+.p-text {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.pp-text2 {
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 600;
+  line-height: 1.6;
+  color: white;
+}
+
+.footer-ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-ul li {
+  list-style: none;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  color: white;
+}
+
+.email,
+.phone {
+  list-style: none;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.email img,
+.phone img {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.footer-ul a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer ul:not(.footer-ul) {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: white;
+  margin: 30px 0 20px 0;
+  width: 100%;
+}
+
+.rights {
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: white;
+}
+
+
 
 /* mobile */
 
@@ -558,6 +638,10 @@ font-size: 18px;
     font-size: 22px;
   }
 
+  /* Footer */
+  #footer .container {
+    padding: 50px 50px 0 50px;
+  }
 }
 
 /* Tablet & Mobile Navigation */
@@ -634,7 +718,30 @@ font-size: 18px;
     font-size: 18px;
   }
 
+  /* Footer */
+  #footer .container {
+    padding: 40px 30px 0 30px;
+  }
 
+  .row2 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-h2,
+  .quick-h2,
+  .contact-h2 {
+    margin-bottom: 15px;
+  }
+
+  .contact-h2 {
+    margin-left: 0;
+  }
+
+  .email,
+  .phone {
+    margin-left: 0;
+  }
 }
 
 /* Mobile (480px - 767px) */
@@ -758,6 +865,64 @@ font-size: 18px;
     font-size: 16px;
     margin-top: 15px;
   }
+
+  /* Footer */
+  #footer .container {
+    padding: 30px 20px 0 20px;
+  }
+
+  .row2 {
+    gap: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .row2 > div {
+    width: 100%;
+    text-align: left;
+  }
+
+  .footer-h2,
+  .quick-h2,
+  .contact-h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .contact-h2 {
+    margin-left: 0;
+  }
+
+  .p-text,
+  .pp-text2 {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .footer-ul {
+    text-align: left;
+  }
+
+  .footer-ul li,
+  .email,
+  .phone {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: left;
+  }
+
+  .email,
+  .phone {
+    margin-left: 0;
+  }
+
+  .rights {
+    font-size: 12px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
 }
 
 /* Mobile Small (480px and below) */
@@ -851,4 +1016,58 @@ font-size: 18px;
     font-size: 14px;
   }
 
+  /* Footer */
+  #footer .container {
+    padding: 25px 15px 0 15px;
+  }
+
+  .row2 {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .row2 > div {
+    width: 100%;
+    text-align: left;
+  }
+
+  .footer-h2,
+  .quick-h2,
+  .contact-h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .contact-h2 {
+    margin-left: 0;
+  }
+
+  .p-text,
+  .pp-text2 {
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .footer-ul {
+    text-align: left;
+  }
+
+  .footer-ul li,
+  .email,
+  .phone {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .email,
+  .phone {
+    margin-left: 0;
+  }
+
+  .rights {
+    text-align: center;
+  }
 }
