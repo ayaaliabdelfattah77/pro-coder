@@ -21,39 +21,39 @@ body{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     color: #fff;
+    
 }
 /* ===== Stars Background ===== */
-   .stars-background{
+stars-background{
   position: fixed;
   inset: 0;
   z-index: -1;
   overflow: hidden;
 }
+
+
 .stars-background span{
   position: absolute;
   width: 20px;
   height: 20px;
+  background-image: url("icons/Group 32.svg"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: .9;
-  animation: floatStars 6s linear infinite;
+  animation: floatStars 4s linear infinite;
 }
 
-.stars-background span:nth-child(1){ top:10%; left:15%; color: #b831f6; }
-.stars-background span:nth-child(2){ top:30%; left:70%; color: #b67dd0; }
-.stars-background span:nth-child(3){ top:60%; left:25%; color: #9e10e0; }
-.stars-background span:nth-child(4){ top:80%; left:50%; color: #9349b6; }
-.stars-background span:nth-child(5){ top:20%; left:85%; color: #cc7bd4; }
-.stars-background span:nth-child(6){ top:45%; left:10%; color: #9A3BBF; }
-.stars-background span:nth-child(7){ top:75%; left:80%; color: #be5fea; }
-.stars-background span:nth-child(8){ top:55%; left:60%; color: #8d1698; }
-.stars-background span:nth-child(9){ top:10%; left:40%; color: #9A3BBF; }
-.stars-background span:nth-child(10){ top:90%; left:30%; color: #6b1066; }
-
-.stars-background span:nth-child(odd){
-  animation-duration: 8s;
-}
-.stars-background span:nth-child(even){
-  animation-duration: 4s;
-}
+.stars-background span:nth-child(1){ top:10%; left:15%; }
+.stars-background span:nth-child(2){ top:30%; left:70%; }
+.stars-background span:nth-child(3){ top:60%; left:25%; }
+.stars-background span:nth-child(4){ top:80%; left:50%; }
+.stars-background span:nth-child(5){ top:20%; left:85%; }
+.stars-background span:nth-child(6){ top:45%; left:10%; }
+.stars-background span:nth-child(7){ top:75%; left:80%; }
+.stars-background span:nth-child(8){ top:55%; left:60%; }
+.stars-background span:nth-child(9){ top:10%; left:40%; }
+.stars-background span:nth-child(10){ top:90%; left:30%; }
 
 @keyframes floatStars{
   0%{ transform:translateY(0) scale(1); opacity:.7; }
@@ -63,8 +63,8 @@ body{
 
 /* why pro coder */
 #container-procoder{
-  margin-top: 150px;
-  min-height: 942px;
+  margin-top: 152px;
+  /* min-height: 942px; */
   height: auto;
   position: relative;
 
@@ -79,12 +79,12 @@ margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 70px;
 
 }
 .procoder-para{
   height: auto;
-  margin-top: 50px;
+  margin-top: 53px;
 }
 .procoder-para p{
   color: white;
@@ -94,7 +94,7 @@ margin-top: 50px;
 #container-procoder h1{
   color: white;
   text-align: center;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -227,13 +227,13 @@ width: 200px;
 /* team section */
 #team-container{
   height: auto;
-  margin-top: 170px;
+  margin-top: 152px;
 
 }
 #team-container h1{
     color: white;
   text-align: center;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: bold;
 
 }
@@ -261,30 +261,34 @@ width: 200px;
 
 }
 /* ----------------------------team-------------- */
-.team-section{
+
+.team-section {
   display: flex;
-  /* align-items: center; */
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center; 
+             
+  flex-wrap: wrap;         
   margin-top: 70px;
+
  
 }
 .team-section img{
   border-radius: 50%;
- 
+
 }
 .team-section h3{
   color: white;
   text-align: center;
-  margin-top: 70px;
-  font-size: 32px;
+  margin-top: 30px;
+  font-size: 25px;
   line-height: 10px;
  
 }
 .team-section p{
   color: white;
   text-align: center;
-  margin-top: 15px;
-  font-size: 24px;
+  margin-top: 13px;
+  font-size: 20px;
 
 }
 
@@ -296,11 +300,11 @@ width: 200px;
  
  background: linear-gradient(135deg, #6B1F79, #3C6FA5, #6B1E87); 
 padding-top: 50px;
-margin-top: 250px;
+margin-top: 133px;
 
 }
 #startProject-section h2{
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   color: white;
@@ -308,16 +312,17 @@ margin-top: 250px;
 
 }
 #startProject-section p{
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   color: white;
   margin-top: 20px;
+  opacity: 0.7;
 
 }
 #startProject-section button{
    background: linear-gradient(135deg, #C3F5FF, #F7CBFF); 
-  height: 60px;
+  height: 50px;
   width: 250px;
   border: none;
  border-radius: 60px ;
@@ -335,24 +340,27 @@ margin-top: 250px;
 #footer{
   background-color: black;
   color: white;
-    padding: 20px 20px;
+    padding: 2px 2px;
+ 
 
 }
 
 .footer-h2 , .quick-h2 ,.contact-h2{
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 50px;
-  line-height: 80px;
+
+
+ 
 }
 .p-text  {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 
  
 }
 .pp-text2{
-font-size: 20px;
+font-size: 17px;
  
 }
 .contact-h2{
@@ -360,14 +368,16 @@ font-size: 20px;
 }
 .footer-ul li , .email , .phone{
  list-style: none;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 2.5;
 
 }
 .footer-ul  a{
    text-decoration: none;
      color: white; 
+
+   
 }
 .p-text2{
   font-size: 20px;
@@ -392,7 +402,8 @@ font-size: 20px;
 
 .head-hero {
     position: relative;
-    margin: 0 80px;
+    margin-left: 120px;
+    margin-right: 120px;
     padding-bottom: 50px;
     min-height: 80vh; 
     border-radius: 24px;
@@ -428,12 +439,12 @@ font-size: 20px;
 
 /* //header */
 header{
-  height: 70px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
- padding: 20px 40px;
+  /* position: relative; */
+ padding: 0 5%;
 
 
 
@@ -463,11 +474,11 @@ header a.active::before{
   opacity: 1;
 }
 
-header .menu-btn{
+ .menu-btn{
   display: none;
   position: relative;
 }
-header .menu-mobile{
+ .menu-mobile{
   display: none;
 }
 
@@ -479,42 +490,168 @@ header .nav-left{
 }
 header .nav-left img{
   width: 40px;
-  height: 100%;
-  margin-right: 50px;
-  margin-top: 40px;
+  height: auto;
+ margin-right: clamp(10px, 2vw, 30px);
+    margin-top: 0
  
 }
-header .nav-left .pages-left {
+header .nav-left .pages-left{
   display: flex;
-  
-  gap: clamp(5px, 2vw, 30px); 
+ gap: clamp(10px, 2vw, 30px); 
+  flex-wrap: wrap;
+    justify-content: center;
 }
 header .nav-left .pages-left a,
 header .nav-right a {
-  text-decoration: none;
-  color: white;
-  margin-top: 40px;
-  font-size: clamp(14px, 1.2vw + 10px, 24px); 
-  white-space: nowrap; 
+    text-decoration: none;
+    color: white;
+    font-size: clamp(14px, 1.2vw + 10px, 24px);
+    margin-top: 0; 
+    white-space: nowrap;
 }
-header .nav-right {
-  display: flex;
-
-  gap: clamp(5px, 1.5vw, 24px);
+header .nav-right{
+    display: flex;
+ gap: clamp(8px, 1.5vw, 24px);
   animation: navber 1s ease forwards;
+  flex-wrap: wrap; 
+    justify-content: center;
 }
 
 
-header .nav-left .pages-left a.active,
-header .nav-right a.active,
-header .nav-left .pages-left a:hover,
+/* 1. القاعدة الأساسية للروابط (ضرورية جداً) */
+header .nav-left a,
+header .nav-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    position: relative; /* مهمة جداً لظهور الخط تحت النص */
+    display: inline-block; /* تضمن أن العنصر له مساحة محددة */
+    transition: color 0.3s;
+}
+
+/* 2. تأثير الهوفر (اللون) */
+header .nav-left a:hover,
 header .nav-right a:hover {
-    display: inline-block;
-    text-decoration: underline solid 4px #b155bf !important;
-    text-underline-offset: 10px;
-    color: #b155bf; 
-    transition: 0.3s ease; 
+    color: #ba39c6;
 }
+
+/* 3. إنشاء الخط المخفي (After) */
+header .nav-left a::after,
+header .nav-right a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(to left, #b226bf, #9053c6);
+    transition: width 0.3s ease-in-out;
+}
+
+
+header .nav-left a:hover::after,
+header .nav-right a:hover::after {
+    width: 100%;
+}
+
+
+header .nav-left a.active,
+header .nav-right a.active {
+    color: #ba39c6; 
+}
+
+header .nav-left a.active::after,
+header .nav-right a.active::after {
+    width: 100%; 
+}
+
+
+/* ------------------------------------------- */
+@media screen and (max-width: 1100px) {
+    .shape {
+        display: none !important;
+    }
+}
+
+ @media screen and (max-width: 768px) {
+   
+    /* header */
+      .header-titel{
+    height: auto;
+  padding: 20px 15px;
+    background-size: cover;
+   
+  }
+ header{
+  height: 60px;
+  padding: 0 10px;
+  margin: 0;
+  
+
+    
+  }
+  header .nav-left .pages-left{
+    display: none;
+    padding: 0;
+    gap: 15px;
+  }
+  header .nav-right{
+    display: none;
+    gap: 12px;
+  }
+  
+   header .nav-left img{
+  width: 35px;
+  height: 55px;
+  margin-right: 20px;
+  margin-top: 10px;
+
+   }
+    .menu-btn{
+    display: block;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+  
+    
+   }
+    .menu-mobile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #291847;
+    transform: translateY(-400px);
+    
+    transition: 0.7s ease;
+    z-index: 2;
+    
+   }
+    .menu-mobile .menu-close{
+    align-self: flex-end;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    
+    
+    
+   }
+   .menu-mobile a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+   margin-top: -30px;
+    line-height: 2.5;
+   }
+   .menu-mobile.menu-show{
+    transform: translateY(0);
+    
+   }}
 
 
   /* end header */
@@ -522,7 +659,7 @@ header .nav-right a:hover {
    /* hero section */
 .hero-section{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 120px;
   animation: 1s ease forwards;
@@ -532,11 +669,12 @@ header .nav-right a:hover {
 }
 
 .hero-section .hero-right img {
-    width: 95%; 
+    width: 85%; 
     max-width: 650px; 
     height: auto; 
     display: block;
-    margin: 0 auto;
+   margin-right:-5px;
+    margin-left: auto;
 }
 .hero-section .hero-right{
   animation: fromright 1s ease forwards;
@@ -544,25 +682,30 @@ header .nav-right a:hover {
 .hero-section .hero-left h1 {
     width: 100%; 
     max-width: 600px; 
-    font-size: clamp(35px, 8vw, 55px); 
+    font-size: clamp(35px, 8vw, 50px); 
       background: var(--gradient-colors-hero);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 30px;
 }
-
+.hero-section .hero-left{
+  margin-left: 45px;
+}
 .hero-section .hero-left p {
     width: 95%; 
     max-width: 600px; 
-    font-size: clamp(18px, 3vw, 24px);
-    margin: 25px auto;
+    font-size: clamp(18px, 3vw, 20px);
+    opacity: 0.7;
+     margin: 15px auto 20px clamp(5px, 2vw, 5px);
       color: var(--word-color);
+      
 }
 .hero-section .hero-left button{
-  padding: 15px;
+  padding: 10px;
   background: var(--gradient-colors-hero-btn);
   border-radius: 50px;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
   color: var(--word-color);
   border: none;
   cursor: pointer;
@@ -597,8 +740,9 @@ header .nav-right a:hover {
 
 
 /* our services */
+/* our services */
 .our-service{
- margin-top: 40px;
+ margin-top: 152px;
   text-align: center;
   position: relative;
 }
@@ -614,7 +758,8 @@ header .nav-right a:hover {
 .our-service h2{
   margin-bottom: 60px;
   color: var(--word-color);
-  font-size: 64px;
+  font-size: 50px;
+  font-weight: bold;
 
 }
 .services{
@@ -696,95 +841,24 @@ header .nav-right a:hover {
   transform: translatey(0);
 
 }
+ 
+  
 
  
   
 
 
- @media screen and (max-width: 768px) {
-   
-    /* header */
-      .header-titel{
-    height: auto;
-    padding-bottom: 60px;
-    background-size: cover;
-   
-  }
- header{
-  height: 60px;
-  padding: 0 10px;
-  margin: 0;
-  
-
-    
-  }
-  header .nav-left .pages-left{
-    display: none;
-    padding: 0;
-  }
-  header .nav-right{
-    display: none;
-  }
-  
- header .nav-left img {
-  width: 40px;
-  height: 100%;
-
-  margin-right: clamp(10px, 4vw, 50px);
-  margin-top: 40px;
-}
-   header .menu-btn{
-    display: block;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-  
-    
-   }
-   header .menu-mobile{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    background: #291847;
-    transform: translatey(-400px);
-    
-    transition: 1s ease;
-    z-index: 2;
-    
-   }
-   header .menu-mobile .menu-close{
-    align-self: flex-end;
-    font-size: 30px;
-    color: var(--word-color);
-    cursor: pointer;
-    
-    
-    
-   }
-   header .menu-mobile a{
-    text-decoration: none;
-    color: var(--word-color);
-    font-size: 20px;
-   }
-   header .menu-mobile.menu-show{
-    transform: translateY(0);
-    
-   }
+ 
 @media screen and (max-width: 768px) {
   
   .hero-section {
     display: flex;
-    flex-direction: column-reverse; /* الصورة فوق والكلام تحت */
+    flex-direction: column-reverse; 
     gap: 40px;
     text-align: center;
     padding: 0 15px;
     margin-top: 50px;
+    margin-left: -35px;
   }
 
   .hero-section .hero-left {
@@ -801,18 +875,17 @@ header .nav-right a:hover {
   .hero-section .hero-left p {
     width: 100%;
     max-width: 450px;
-    font-size: 18px;
+    font-size: 15px;
     margin: 20px auto;
   }
 
   .hero-section .hero-right img {
-    width: 80%; 
+    width: 85%; 
     max-width: 400px; 
     height: auto;
     margin: 0 auto;
   }
-}
-/* our services */
+  /* our services */
  .our-service h2{
   margin-bottom: 60px;
   font-size: 30px;
@@ -823,6 +896,7 @@ header .nav-right a:hover {
   padding: 0 30px;
   flex-direction: column;
   gap: 30px;
+ 
 }
  .our-service .start{
   opacity: 0.2;
@@ -845,7 +919,10 @@ header .nav-right a:hover {
 
 }
 
+}
 
 
 
-  }
+
+
+  
