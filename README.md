@@ -18,11 +18,21 @@ A professional business website for a software development company named **ProCo
 - **Icons:** Font Awesome & SVG Icons.
 **Data Handling:** Mock API (for simulating backend services)
 
+## 📦 Libraries Used
+
+### 🔄 Spinner (Loading Indicator)
+- Used to indicate loading states while fetching data.
+- Improves user experience during asynchronous operations.
+
+### ✨ AOS (Animate On Scroll)
+- Used to add smooth animations when elements appear on scroll.
+- Enhances UI interactivity with minimal code.
 
 ## 🔌 API Integration
 In this project, I used a **Mock API** to simulate real-world data fetching. This allowed me to:
 - Practice handling asynchronous requests using `fetch` .
 - Design the UI based on dynamic data.
+
 
 ## 🚀 How to use
 1. Clone the repository:
