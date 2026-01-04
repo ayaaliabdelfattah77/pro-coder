@@ -22,7 +22,7 @@ const getServices = async () => {
         spinner.style.display= "none"
          filteration();
 
-      },2000)
+      },1000)
 
   } catch (error) {
         spinner.style.display= "none"
@@ -123,12 +123,12 @@ searchInput.addEventListener("input", filteration);
 
 // ===================================================================
 
-let menu_btn=document.querySelector('.menu-btn');
-let menu_close=document.querySelector('.menu-close')
+    let menu_btn = document.querySelector('.menu-btn');
+    let menu_close = document.querySelector('.menu-close');
 
-menu_btn.onclick=function(){
-    document.querySelector('.menu-mobile').classList.add('menu-show')
-}
-menu_close.onclick=function(){
-     document.querySelector('.menu-mobile').classList.remove('menu-show')
-}
+        menu_btn.onclick = function(){
+        document.querySelector('.menu-mobile').classList.add('menu-show');
+    }
+    menu_close.onclick = function(){
+        document.querySelector('.menu-mobile').classList.remove('menu-show');
+    }
