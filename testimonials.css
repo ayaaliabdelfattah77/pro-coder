@@ -11,102 +11,137 @@ body {
  
 }
 
+
 header{
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
- padding: 20px 40px;
+ padding: 0 10px;
+ margin-left: 25px;
 
-
-
- 
-  
 }
-.shape{
- position: absolute;
+.white-top{
+  background: #ffffff;
+  border-radius: 0 0 64px 64px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 40px 90px rgba(0,0,0,0.1);
+}
+
+
+ .shape{
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 288px;
   height: 45px;
-  background:  #291847;
-  border-radius: 0 0 24px 24px;
-  clip-path: polygon(
-    0% 0%, 
-    100% 0%, 
-    80% 100%, 
-    20% 100%
-  );
-  border-radius: 0 0 20px 20px;
-}
+ }
+.header-titel{
+  background-image: 
+    linear-gradient(to bottom, rgba(14, 1, 22, 0) 70%, oklab(16.994% 0.03966 -0.0525 / 0.8) 100%), 
+    url('images/Group\ 112.png');
+ background-size:84% ;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-position: top;
+ height: 60vh;
+ width : 100%;
+ margin-top: 10px;
+ 
+ position: relative;
+ z-index: 1;
+ 
 
-header a:hover::before,
-header a.active::before{
-  opacity: 1;
 }
-
 header .menu-btn{
   display: none;
-  position: relative;
 }
 header .menu-mobile{
   display: none;
 }
-
-
 header .nav-left{
   display: flex;
   align-items: center;
   animation: navber 1s ease forwards;
 }
+
 header .nav-left img{
   width: 40px;
   height: 100%;
   margin-right: 50px;
-  margin-top: 40px;
- 
+  margin-left: 120px;
+  margin-top: 20px;
 }
-header .nav-left .pages-left {
+header .nav-left .pages-left{
   display: flex;
-  
-  gap: clamp(5px, 2vw, 30px); 
+  gap: 24px;
+  margin-right: 120px;
+  margin-top: 20px;
+
 }
-header .nav-left .pages-left a,
-header .nav-right a {
+header .nav-left .pages-left a{
   text-decoration: none;
-  color: white;
-  margin-top: 40px;
-  
-  font-size: clamp(14px, 1.2vw + 10px, 24px); 
-  white-space: nowrap; 
+  color:var(--word-color);
+  font-size: 24px;
+
 }
-header .nav-right {
+header .nav-right{
   display: flex;
-
-  gap: clamp(5px, 1.5vw, 24px);
+  gap: 24px;
+  margin-right: 120px;
+  margin-top: 20px;
   animation: navber 1s ease forwards;
+  padding: 60px;
+}
+header .nav-right a{
+  text-decoration: none;
+  color:var(--word-color);
+  font-size: 24px;
 }
 
+header .nav-left a.active{
 
-header .nav-left .pages-left a.active,
-header .nav-right a.active,
-header .nav-left .pages-left a:hover,
-header .nav-right a:hover {
-    display: inline-block;
-    text-decoration: underline solid 4px #b155bf !important;
-    text-underline-offset: 10px;
-    color: #b155bf; 
-    transition: 0.3s ease; 
-}
+  text-decoration: underline solid 4px;
+  text-underline-offset: 7px;
+  text-decoration-color:#b155bf ;
+  
+  }
+  
+    
+header .nav-right a.active{
+
+  text-decoration: underline solid 4px;
+  text-underline-offset: 7px;
+  text-decoration-color:#b155bf ;
+  
+  }
+  header .nav-left a:hover{
+    color: #b155bf;
+
+  }
+   header .nav-right a:hover{
+    color: #b155bf;
+
+  }
+
+header .nav-left a,
+  header .nav-right a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    position: relative;
+    transition: color 0.3s;
+    
+  }
 
 
+  
 
 
-
-
-  /* bas-- */
   @keyframes navber{
     from{
       transform: translateY(-300px);
@@ -117,6 +152,9 @@ header .nav-right a:hover {
       opacity: 1;
     }
   }
+
+
+
 
 .gallery {
   padding: 200px 20% 50px 20%; 
@@ -138,40 +176,37 @@ header .nav-right a:hover {
   text-align: center;
   padding: 70px 8%;
 }
-/* //aya */
+
 .testimonials h1{
-  font-size: 55px;
-  font-weight: bold;
+  font-size: 40px;
 }
 
 .testimonials p {
   opacity: .8;
   margin: 15px 0 50px;
   font-weight: bold;
-  font-size: 30px;
 
 }
 
 .cards{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
   gap: 25px;
-  margin-top: 60px;
+ 
+ 
   
 }
 
 .card {
-width: 400px;
-height: auto;
+  padding: 25px;
   border-radius: 18px;
   text-align: left;
-  margin: 0 auto; 
-  width: 100%;
-  color: white;
+   color: white;
+ 
 }
 .cards p{
-  font-size:33px;
-  margin-left: 50px;
+  font-size:medium;
+
 }
 
 
@@ -181,20 +216,18 @@ height: auto;
   gap: 10px;
 }
 .user img{
-  width: 80px;
-  height: 80px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
 flex-shrink: 0;
   align-items: center;
   flex-direction: row-reverse;
-  margin-left: 40px;
-  margin-bottom: 30px;
   
 }
 .user span{
-  font-size: 25px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1.4;
 }
 .user p{
@@ -207,8 +240,8 @@ flex-shrink: 0;
 }
 .card hr{
    border: none;
-   height:1px;
-   background: #ffffffe3;
+   height: 1px;
+   background: #ffffff47;
    margin: 20px 0;
 }
 .card.blue{ background: linear-gradient(135deg,#3ac5e1,#7743F0); }
@@ -219,8 +252,7 @@ flex-shrink: 0;
 .stars {
   color: #FF9707;
   margin-bottom: 15px;
-  font-size: 50px;
-  margin-left: 50px;
+  font-size: 25px;
 }
 
 .user {
@@ -252,21 +284,18 @@ flex-shrink: 0;
 
 .cta {
   background: linear-gradient(135deg,#9b7cff,#b084f7);
-  padding: 20px 8%;
+  padding: 30px 8%;
   text-align: center;
    
 }
 .cta p {
-  font-size: 35px;
+  font-size: 25px;
   margin: 5px ;
-}
-.cta h1{
-  font-size: 45px;
 }
 .cta button {
   background: linear-gradient(135deg,#C3F5FF,#F7CBFF);
   margin-top: 20px;
-  padding: 20px 30px;
+  padding: 12px 30px;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -403,24 +432,29 @@ flex-shrink: 0;
 #footer{
   background-color: black;
   color: white;
-    padding: 20px 20px;
+    padding: 2px 2px;
+ 
 
 }
+
+
 
 .footer-h2 , .quick-h2 ,.contact-h2{
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 50px;
-  line-height: 80px;
+
+
+ 
 }
 .p-text  {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 
  
 }
 .pp-text2{
-font-size: 20px;
+font-size: 17px;
  
 }
 .contact-h2{
@@ -428,14 +462,16 @@ font-size: 20px;
 }
 .footer-ul li , .email , .phone{
  list-style: none;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 2.5;
 
 }
 .footer-ul  a{
    text-decoration: none;
      color: white; 
+
+   
 }
 .p-text2{
   font-size: 20px;
@@ -444,7 +480,6 @@ font-size: 20px;
 .rights{
   text-align: center;
 }
-
 
 
  @media screen and (max-width: 768px) {
@@ -472,13 +507,13 @@ font-size: 20px;
     display: none;
   }
   
- header .nav-left img {
-  width: 40px;
-  height: 100%;
- 
-  margin-right: clamp(10px, 4vw, 50px);
-  margin-top: 40px;
-}
+   header .nav-left img{
+  width: 35px;
+  height: 55px;
+  margin: 0;
+  margin-top: 10px;
+
+   }
    header .menu-btn{
     display: block;
     font-size: 26px;
