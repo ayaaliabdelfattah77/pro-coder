@@ -14,8 +14,10 @@
 body {
   background: #1D0A3C;
   color: #fff;
+  
  
 }
+
 header{
   height: 70px;
   display: flex;
@@ -45,6 +47,7 @@ header{
   height: 45px;
  }
 .header-titel{
+
   background-image: 
     linear-gradient(to bottom, rgba(14, 1, 22, 0) 70%, oklab(16.994% 0.03966 -0.0525 / 0.8) 100%), 
     url('images/Group\ 112.png');
@@ -52,10 +55,10 @@ header{
  background-repeat: no-repeat;
  background-position: center;
  background-position: top;
- height: 60vh;
- width : 100%;
- margin-top: 10px;
- 
+ height:70vh;
+ width : 90%;
+margin: auto;
+ margin-top: 10px; 
  position: relative;
  z-index: 1;
  
@@ -77,13 +80,13 @@ header .nav-left img{
   width: 40px;
   height: 100%;
   margin-right: 50px;
-  margin-left: 120px;
+  /* margin-left: 120px; */
   margin-top: 20px;
 }
 header .nav-left .pages-left{
   display: flex;
   gap: 24px;
-  margin-right: 120px;
+  /* margin-right: 120px; */
   margin-top: 20px;
 
 }
@@ -96,7 +99,7 @@ header .nav-left .pages-left a{
 header .nav-right{
   display: flex;
   gap: 24px;
-  margin-right: 120px;
+  /* margin-right: 120px; */
   margin-top: 20px;
   animation: navber 1s ease forwards;
   padding: 60px;
@@ -157,6 +160,7 @@ header .nav-left a,
     }
   }
 
+
   /* title contact */
   .title-contact{
 
@@ -173,7 +177,7 @@ header .nav-left a,
 
   }
   .title-contact p{
-    font-size: 25px;
+    font-size: 30px;
     color: var(--word-color);
     margin-top: 20px;
  
@@ -397,7 +401,7 @@ header .nav-left a,
 }
 
 .footer-h2 , .quick-h2 ,.contact-h2{
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 50px;
   line-height: 80px;
