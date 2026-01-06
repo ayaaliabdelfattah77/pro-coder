@@ -62,40 +62,27 @@ stars-background{
 }
 
 /* why pro coder */
-#container-procoder{
+
+#container-procoder {
   margin-top: 152px;
-  /* min-height: 942px; */
   height: auto;
   position: relative;
-
-}
-.icons-proSection{
-  position: absolute;
-  right: 250px;
-  top:-10px;
-}
-#procoder-section{
-margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-
-}
-.procoder-para{
-  height: auto;
-  margin-top: 53px;
-}
-.procoder-para p{
-  color: white;
+  margin-right: 10px;
 }
 
-
-#container-procoder h1{
+#container-procoder h1 {
   color: white;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
+}
+
+#procoder-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
 }
 
 .procoder-img {
@@ -103,124 +90,75 @@ margin-top: 50px;
   width: 500px;
   height: 450px;
 }
-.icons-img{
+
+
+.why-img1 img, .why-img2 img, .why-img3 img {
   position: absolute;
-  bottom: -90px;
-  left: -60px;
-}
-
-.procoder-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-}
-
-/* الصورة الأولى */
-.why-img1 img {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 271px;
   height: 257px;
-  border-radius:  0 95px 0 0;
-  /* margin: 24px; */
-
+  object-fit: cover;
 }
 
-/* الصورة الثانية */
-.why-img2 img{
-  position: absolute;
-  top: 100px;
-  left: -80px;
- width: 271px;
-  height: 257px;
-  border-radius:  0 95px 0 0;
-  /* margin: 32px; */
+.why-img1 img { top: 0; right: 0; border-radius: 0 95px 0 0; }
+.why-img2 img { top: 100px; left: -80px; border-radius: 0 95px 0 0; }
+.why-img3 img { bottom: -80px; right: 12px; border-radius: 95px 0 0 0; }
 
-}
-
-/* الصورة الثالثة */
-.why-img3 img{
-  position: absolute;
-  bottom: -80px;
-  right: 12px;
-width: 271px;
-  height: 257px;
-  border-radius:  95px 0 0 0;
-
-
-}
-.procoder-para{
+.procoder-para {
   position: relative;
-
-
+  margin-top: 53px;
 }
-.procoder-para p{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.procoder-para p {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 33px;
   font-weight: bold;
   line-height: 70px;
 }
-.icons-para{
-  position: absolute;
-  left: 165px;
-  bottom: -100px;
-  width: 48px;
-  height: 48px;
-}
-.icons-img{
-  width: 36.19px;
-  height: 34.79px;
-}
-/* Small screens */
+
+
+.icons-proSection { position: absolute; right: 250px; top: -10px; }
+.icons-img { position: absolute; bottom: -90px; left: -60px; width: 36.19px; height: 34.79px; }
+.icons-para { position: absolute; left: 165px; bottom: -100px; width: 48px; height: 48px; }
+
+
 @media (max-width: 767px) {
-/* الصورة الأولى */
-.why-img1 img {
-  position: absolute;
-  top: 0;
-  right: 15px;
-  width: 200px;
-  height: 257px;
-  border-radius:  0 95px 0 0;
-  /* margin: 24px; */
-
-}
-
-/* الصورة الثانية */
-.why-img2 img{
-  position: absolute;
-  top: 100px;
-  left: 30px;
- width: 200px;
-  height: 257px;
-  border-radius:  0 95px 0 0;
-  /* margin: 32px; */
-
-}
-
-/* الصورة الثالثة */
-.why-img3 img{
-  position: absolute;
-  bottom: -80px;
-  right: 25px;
-width: 200px;
-  height: 257px;
-  border-radius:  95px 0 0 0;
-
-
-}
-
-  .procoder-para p {
-    font-size: 20px;
-    /* line-height: 1.3; */
-    /* margin-top: 60px; */
+  #procoder-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
   }
 
-  .icons-proSection {
-    position: relative; 
-    display: block;
-    margin: 0 auto 20px;
+  .procoder-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .why-img1 img, .why-img2 img, .why-img3 img {
+    position: static !important; 
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  .procoder-para {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .procoder-para p {
+    font-size: 22px !important; 
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .icons-img, .icons-para, .icons-proSection {
+    display: none; 
   }
 }
 /* --------------------------------------------------------- */
@@ -391,15 +329,6 @@ font-size: 17px;
 /* ================================================================================================================ */
 
 
-
-
-
-
-
-
-
-
-
 .head-hero {
     position: relative;
     margin-left: 120px;
@@ -518,24 +447,24 @@ header .nav-right{
 }
 
 
-/* 1. القاعدة الأساسية للروابط (ضرورية جداً) */
+
 header .nav-left a,
 header .nav-right a {
     text-decoration: none;
     color: white;
     font-size: 24px;
-    position: relative; /* مهمة جداً لظهور الخط تحت النص */
-    display: inline-block; /* تضمن أن العنصر له مساحة محددة */
+    position: relative; 
+    display: inline-block; 
     transition: color 0.3s;
 }
 
-/* 2. تأثير الهوفر (اللون) */
+
 header .nav-left a:hover,
 header .nav-right a:hover {
     color: #ba39c6;
 }
 
-/* 3. إنشاء الخط المخفي (After) */
+
 header .nav-left a::after,
 header .nav-right a::after {
     content: "";
@@ -713,6 +642,7 @@ header .nav-right a.active::after {
 .hero-section .hero-left{
   animation: fromleft 1s ease forwards;
 }
+
  .head-hero .start{
   opacity: 0.2;
  }
@@ -854,13 +784,18 @@ header .nav-right a.active::after {
   .hero-section {
     display: flex;
     flex-direction: column-reverse; 
-    gap: 40px;
+    gap: 20px;
     text-align: center;
-    padding: 0 15px;
-    margin-top: 50px;
-    margin-left: -35px;
+    padding: 0 20px;
+    margin-top: 30px;
+    margin-left: 0;
   }
 
+  .head-hero {
+        margin-left: 10px; 
+        margin-right: 10px;
+        border-radius: 0; 
+    }
   .hero-section .hero-left {
     width: 100%;
   }
@@ -920,6 +855,7 @@ header .nav-right a.active::after {
 }
 
 }
+
 
 
 
