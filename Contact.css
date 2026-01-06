@@ -26,26 +26,111 @@ body {
   box-shadow: 0 40px 90px rgba(0, 0, 0, 0.1);
 }
 
-.header-titel {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(14, 1, 22, 0) 70%,
-      oklab(16.994% 0.03966 -0.0525 / 0.8) 100%
-    ),
-    url("images/Group\ 112.png");
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: top;
-  height: 60vh;
-  margin-left: 120px;
-  margin-right: 120px;
-  height: auto;
-  padding-bottom: 60px;
-  background-size: cover;
-  position: relative;
-  z-index: 5;
+ .header-titel{
+  background-image: 
+    linear-gradient(to bottom, rgba(14, 1, 22, 0) 70%, oklab(16.994% 0.03966 -0.0525 / 0.8) 100%), 
+    url('images/Group\ 112.png');
+ background-size:84% ;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-position: top;
+ height:60vh;
+ width : 100%;
+ margin-top: 10px;
+ position: relative;
+ z-index: 1;
+ 
+
 }
+header{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+ padding: 0 10px;
+ margin-left: 25px;
+
+}
+header .menu-btn{
+  display: none;
+}
+header .menu-mobile{
+  display: none;
+}
+header .nav-left{
+  display: flex;
+  align-items: center;
+  animation: navber 1s ease forwards;
+}
+header .nav-left img{
+  width: 40px;
+  height: 100%;
+  margin-right: 50px;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+header .nav-left .pages-left{
+  display: flex;
+  gap: 24px;
+  margin-right: 120px;
+  margin-top: 20px;
+
+}
+header .nav-left .pages-left a{
+  text-decoration: none;
+  color:var(--word-color);
+  font-size: 24px;
+
+}
+header .nav-right{
+  display: flex;
+  gap: 24px;
+  margin-right: 120px;
+  margin-top: 20px;
+  animation: navber 1s ease forwards;
+  padding: 60px;
+}
+header .nav-right a{
+  text-decoration: none;
+  color:var(--word-color);
+  font-size: 24px;
+}
+
+header .nav-left a.active{
+
+  text-decoration: underline solid 4px;
+  text-underline-offset: 7px;
+  text-decoration-color:#b155bf ;
+  
+  }
+  header .nav-right a.active{
+
+  text-decoration: underline solid 4px;
+  text-underline-offset: 7px;
+  text-decoration-color:#b155bf ;
+  
+  }
+  header .nav-left a:hover{
+    color: #b155bf;
+
+  }
+   header .nav-right a:hover{
+    color: #b155bf;
+
+  }
+  header .nav-left a,
+  header .nav-right a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    position: relative;
+    transition: color 0.3s;
+    
+  }
+
+
 
 @keyframes navber {
   from {
@@ -382,6 +467,7 @@ textarea:focus {
     flex-direction: column;
     gap: 0;
     margin: 0;
+    
   }
   .send-msg .bottom-inputs {
     flex-direction: column;
@@ -463,153 +549,46 @@ textarea:focus {
 
 
 
-header {
-  position: relative;
-
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5%;
-}
-
-.shape {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 288px;
-  height: 45px;
-  background: #291847;
-  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
- z-index: -5;
-}
-
-
-
-header a:hover::before,
-header a.active::before {
-  opacity: 1;
-}
-
-.menu-btn {
-  display: none;
-  position: relative;
-}
-.menu-mobile {
-  display: none;
-}
-
-header .nav-left {
-  display: flex;
-  align-items: center;
-  animation: navber 1s ease forwards;
-}
-header .nav-left img {
-  width: 40px;
-  height: auto;
-  margin-right: clamp(10px, 2vw, 30px);
-  margin-top: 0;
-}
-header .nav-left .pages-left {
-  display: flex;
-  gap: clamp(10px, 2vw, 30px);
-  flex-wrap: wrap;
-  justify-content: center;
-}
-header .nav-left .pages-left a,
-header .nav-right a {
-  text-decoration: none;
-  color: white;
-  font-size: clamp(14px, 1.2vw + 10px, 20px);
-  margin-top: 0;
-  white-space: nowrap;
-}
-header .nav-right {
-  display: flex;
-  gap: clamp(8px, 1.5vw, 24px);
-  animation: navber 1s ease forwards;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-header .nav-left a,
-header .nav-right a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  position: relative;
-  display: inline-block;
-  transition: color 0.3s;
-}
-
-header .nav-left a:hover,
-header .nav-right a:hover {
-  color: #ba39c6;
-}
-
-header .nav-left a::after,
-header .nav-right a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 4px;
-  bottom: -5px;
-  left: 0;
-  background: linear-gradient(to left, #b226bf, #9053c6);
-  transition: width 0.3s ease-in-out;
-}
-
-header .nav-left a:hover::after,
-header .nav-right a:hover::after {
-  width: 100%;
-}
-
-header .nav-left a.active,
-header .nav-right a.active {
-  color: #ba39c6;
-}
-
-header .nav-left a.active::after,
-header .nav-right a.active::after {
-  width: 100%;
-}
-
 @media screen and (max-width: 768px) {
   /* header */
-  .header-titel {
+      .header-titel{
     height: auto;
-    padding: 20px 15px;
+    padding-bottom: 60px;
     background-size: cover;
+   
   }
-  header {
-    height: 60px;
-    padding: 0 10px;
-    margin: 0;
+ header{
+  height: 60px;
+  padding: 0 10px;
+  margin: 0;
+  
+
+    
   }
-  header .nav-left .pages-left {
+  header .nav-left .pages-left{
     display: none;
     padding: 0;
-    gap: 15px;
   }
-  header .nav-right {
+  header .nav-right{
     display: none;
-    gap: 12px;
   }
+  
+   header .nav-left img{
+  width: 35px;
+  height: 55px;
+  margin: 0;
+  margin-top: 10px;
 
-  header .nav-left img {
-    width: 35px;
-    height: 55px;
-    margin-right: 20px;
-    margin-top: 10px;
-  }
-  .menu-btn {
+   }
+   header .menu-btn{
     display: block;
     font-size: 26px;
     color: white;
     cursor: pointer;
-  }
-  .menu-mobile {
+  
+    
+   }
+   header .menu-mobile{
     position: absolute;
     top: 0;
     left: 0;
@@ -620,37 +599,32 @@ header .nav-right a.active::after {
     gap: 20px;
     padding: 20px;
     background: #291847;
-    transform: translateY(-400px);
-
-    transition: 0.7s ease;
+    transform: translatey(-400px);
+    
+    transition: 1s ease;
     z-index: 2;
-  }
-  .menu-mobile .menu-close {
+    
+   }
+   header .menu-mobile .menu-close{
     align-self: flex-end;
     font-size: 30px;
-    color: white;
+    color: var(--word-color);
     cursor: pointer;
-  }
-  .menu-mobile a {
+    
+    
+    
+   }
+   header .menu-mobile a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--word-color);
     font-size: 20px;
-    margin-top: -30px;
-    line-height: 2.5;
-  }
-  .menu-mobile.menu-show {
+   }
+   header .menu-mobile.menu-show{
     transform: translateY(0);
-  }
- 
+    
+   }
 }
 
 
-@media screen and (max-width: 1100px) {
-  header .shape {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-}
 
-/* end header */
+
