@@ -578,8 +578,10 @@ header .nav-right a.active::after {
 @media screen and (max-width: 768px) {
   /* header */
   .header-titel {
-    height: auto;
-    padding: 20px 15px;
+  margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 15px; /* مسافة بسيطة جداً من الجوانب */
+        background-position: center;
     background-size: cover;
   }
   header {

@@ -141,7 +141,7 @@ body{
     .services-section {
         width: 100% !important;
         border-radius: 0; 
-        padding: 40px 10px !important;
+        padding: 20px 10px !important;
     }
 
     
@@ -223,7 +223,10 @@ body{
 
 
 @media (max-width: 768px) {
-
+  #services-container {
+    justify-content: flex-start !important;
+    padding-right: 30px;   
+  }
   #services-container .service-card {
     flex: 0 0 90%;
     margin: 0 auto 20px auto;
@@ -545,6 +548,7 @@ header .nav-right a.active::after {
     height: auto;
   padding: 20px 15px;
     background-size: cover;
+    
    
   }
  header{
