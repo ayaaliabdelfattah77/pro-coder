@@ -551,6 +551,7 @@ header .nav-right a.active::after {
     
    
   }
+
  header{
   height: 60px;
   padding: 0 10px;
@@ -759,10 +760,7 @@ header .nav-right a.active::after {
     }
 }
 @media (max-width: 991px) {
-    .row {
-        margin-right: 20px !important; 
-        margin-left: 20px !important;
-    }
+  
     #services-container .service-card {
         flex: 0 0 80% !important; 
          margin: 10px auto !important;
