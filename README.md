@@ -33,6 +33,10 @@ In this project, I used a **Mock API** to simulate real-world data fetching. Thi
 - Practice handling asynchronous requests using `fetch` .
 - Design the UI based on dynamic data.
 
+### 📧 EmailJS (Contact Form Integration)
+- Integrated to handle contact form submissions directly from the frontend.
+- Sends user inquiries to the company's official email without requiring a backend server.
+- Provides real-time feedback (success/error messages) to users upon sending.
 
 ## 🚀 How to use
 1. Clone the repository:
