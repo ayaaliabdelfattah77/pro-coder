@@ -593,7 +593,7 @@ header .nav-right a.active::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
     padding: 20px;
     background: #291847;
     transform: translateY(-400px);
@@ -615,8 +615,8 @@ header .nav-right a.active::after {
     text-decoration: none;
     color:rgb(255, 255, 255);
     font-size: 20px;
-   margin-top: -30px;
-    line-height: 2.5;
+   margin-top: -20px;
+    line-height:2;
    }
    .menu-mobile.menu-show{
     transform: translateY(0);
